@@ -1,0 +1,307 @@
+@media screen and (max-width: 425px) {
+  /*! NAV-BAR */
+
+  .nav-log {
+    padding: 8px 0 8px 18px;
+  }
+
+  .nav-menu {
+    display: none;
+  }
+
+  .shopping-box {
+    display: none;
+  }
+
+  .nav-bar {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    background-color: rgba(255, 255, 255, 0.555);
+    margin: 0;
+  }
+
+  .nav-link {
+    margin-right: 0;
+  }
+
+  /*? ==== BURGER-MENU ====*/
+
+  /* .nav-list.show {
+        display: grid;
+    } */
+
+  .nav-menu.show {
+    display: flex;
+  }
+
+  .nav-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 16px 0;
+  }
+
+  .nav-link {
+    font-size: 32px;
+    font-weight: 600;
+    color: #fff;
+  }
+
+  .burger-btn {
+    position: absolute;
+    right: 18px;
+    top: 20px;
+    width: 30px;
+    height: 25px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    z-index: 999;
+  }
+
+  .bar {
+    height: 4px;
+    width: 100%;
+    background-color: rgb(219, 74, 163);
+    transition: 0.3s ease;
+    border-radius: 10px;
+  }
+
+  .nav-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+
+    display: none;
+    position: fixed; /*?position: fixed shrink vw  */
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    padding-left: 16px;
+    background-color: rgba(0, 0, 0, 0.911);
+    z-index: 666;
+    gap: 12px;
+  }
+
+  .bar:nth-child(1).active {
+    transform: rotate(45deg) translate(9px, 5px);
+  }
+
+  .bar:nth-child(2).active {
+    display: none;
+  }
+
+  .bar:nth-child(3).active {
+    transform: rotate(-45deg) translate(9px, -5px);
+  }
+
+  /**==============================*/
+  /*! HERO-SECTION*/
+  /**==============================*/
+
+  .section-hero {
+    position: relative;
+
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+  }
+
+  .image-in-slide {
+    object-fit: cover;
+    object-position: left;
+  }
+
+  .hero-container {
+    position: absolute;
+
+    /* display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+     */
+    top: 40%;
+    right: 20px;
+
+    max-width: 460px;
+    /* width: 50%; */
+    height: auto;
+    z-index: 2;
+  }
+
+  .hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
+
+    min-width: 400px;
+  }
+
+  .hero-title {
+    font-family: "Bodoni Moda", serif;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 1.2em;
+
+    text-align: right;
+    margin-bottom: 22px;
+
+    color: #fff;
+  }
+
+  .hero-btt {
+    font-weight: 600;
+    font-size: 14px;
+    color: #fff;
+
+    background-color: #e79899;
+    text-transform: uppercase;
+    padding: 8px 22px;
+    width: 320px;
+  }
+
+  /**==============================*/
+  /*! GALLERY-SECTION*/
+  /**==============================*/
+
+  .gallery-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 90px 0;
+  }
+
+  .gall-subtitle {
+    font-size: 24px;
+  }
+
+  .gall-title {
+    text-align: center;
+    font-size: 30px;
+    line-height: 36px;
+    letter-spacing: 0.6px;
+
+    margin-bottom: 60px;
+  }
+
+  .gallery-img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    gap: 40px;
+    width: 90%;
+  }
+
+  .gall-link {
+    font-weight: 600;
+    font-size: 18px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+
+    padding: 16px 0;
+    background-color: rgb(222, 193, 97);
+    width: 250px;
+  }
+
+  /**==============================*/
+  /*! FORM-SECTION */
+  /**==============================*/
+
+  .form-container {
+    padding: 60px 0;
+  }
+
+  .submit-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* gap: 90px; */
+
+    padding: 0 60px;
+    width: 100%;
+    height: auto;
+  }
+
+  .form-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+
+    width: 100%;
+    margin-bottom: 40px;
+  }
+
+  .form-title {
+    font-family: "Bodoni Moda", serif;
+    font-weight: 600;
+    font-size: 32px;
+    color: #333;
+
+    letter-spacing: 0.04em;
+    line-height: 38px;
+    margin-bottom: 25px;
+  }
+
+  .form-subtitle {
+    font-weight: 600;
+    font-size: 24px;
+    color: #333;
+
+    letter-spacing: 0.06em;
+    margin-bottom: 18px;
+  }
+
+  .form-text {
+    font-weight: 400;
+    font-size: 16px;
+    color: #333;
+    line-height: 1.2em;
+    letter-spacing: 0.06em;
+  }
+
+  .form-data {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    gap: 28px;
+    width: 100%;
+  }
+
+  /**==============================*/
+  /*! ARTIKLE-SECTION */
+  /**==============================*/
+
+  .artikel-section {
+    display: none;
+  }
+
+  /**==============================*/
+  /*! FOOTER */
+  /**==============================*/
+
+  .footer-container {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    padding: 60px 0;
+
+    gap: 30px;
+  }
+}

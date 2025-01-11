@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="eksamen" />
+    <meta name="keywords" content="hero section" />
+    <meta name="author" content="Oleg Troian" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- STYLE-CSS -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/media-queries.css" />
+    <link rel="stylesheet" href="./icons/icons.css" />
+    <!-- JS -->
+    <script
+      src="https://kit.fontawesome.com/53c6f727c2.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/script.js" defer></script>
+    <script src="./js/hero-slide.js" defer></script>
+    <script src="./js/gallery.js" defer></script>
+    <script src="./js/subscription-form.js" defer></script>
+    <title>Eksamen</title>
+  </head>
+
+  <body>
+    <header class="header">
+      <nav class="nav-bar">
+        <div class="nav-log">
+          <a href="#" class="logo-link">
+            <img
+              src="./logo/BoligBladetLogo-707070.png"
+              alt="bolig-logo"
+              class="nav-logo"
+            />
+          </a>
+        </div>
+
+        <div class="burger-btn">
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+        </div>
+
+        <ul class="nav-menu">
+          <li class="nav-item">
+            <a href="#inspiration" class="nav-link">inspiration</a>
+          </li>
+          <li class="nav-item">
+            <a href="#artikler" class="nav-link">artikler</a>
+          </li>
+          <li class="nav-item">
+            <a href="#abonnement" class="nav-link">abonnement</a>
+          </li>
+        </ul>
+
+        <!-- <div class="shopping-box">
+        <a href="#" class="basket">
+          Buy
+        </a>
+      </div> -->
+      </nav>
+    </header>
+
+    <main>
+      <section class="section-hero" id="home">
+        <img class="image-in-slide" src="" alt="" />
+
+        <div class="hero-container">
+          <div class="hero-content">
+            <h1 class="hero-title">Dit foretrukne online boligmagasin</h1>
+            <button class="hero-btt">Show More</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- GALLERY-SECTION -->
+      <section class="gallery-section" id="inspiration">
+        <div class="gallery-container container">
+          <div class="gall-content">
+            <p class="gall-subtitle">Søge du</p>
+            <h2 class="gall-title">inspiration til boligindretning?</h2>
+          </div>
+          <div class="gallery-img"></div>
+          <div class="gall-btt">
+            <a href="#" class="gall-link">se alle rum</a>
+          </div>
+        </div>
+
+        <!-- MODAL -->
+        <div id="modal" class="modal">
+          <div class="modal-content">
+            <i class="icon-x close"></i>
+
+            <div class="img-modal-wrapper">
+              <button class="arrow-slider arrow-1">
+                <i class="icon-chevron-left left"></i>
+              </button>
+
+              <img id="modal-img" />
+
+              <button class="arrow-slider arrow-2">
+                <i class="icon-chevron-left right"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        
+      </section>
+
+      <!-- ARTIKEL -->
+      <section class="artikel-section" id="artikler">
+        <div class="artikel-container container">
+          <div class="articke-content">
+            <p class="artikel-subtitle">ugens mest læste</p>
+            <div class="article-header">
+              <i class="icon-uniE90D left"></i>
+              <h2 class="artikel-title">
+                Thomas var mest til neutrale farver, men pludselig er en farve
+                vokset på ham...
+              </h2>
+              <i class="icon-uniE90D right"></i>
+            </div>
+            <div class="">
+              <button class="artikle-btt">Læs artiklen her</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- FORM-SECTION -->
+      <section class="form-section" id="abonnement">
+        <div class="form-container container">
+          <div class="submit-content">
+            <div class="form-content">
+              <h2 class="form-title">Abonner på vores online magasin</h2>
+              <h4 class="form-subtitle">Og spar op til 379 kr</h4>
+              <p class="form-text">
+                Når du udfylder formularen, får du fakturaen tilsendt på mail.
+                Husk at tjekke dit spamfilter!
+              </p>
+            </div>
+
+            <div class="form-buy">
+              <h2 class="subscription-title"></h2>
+
+              <form
+                action="#"
+                method="POST"
+                class="form-data"
+                id="order-data"
+              >
+                <div class="name-form">
+                  <label for="name-tx" class="input-title-name"
+                    >fulde navn</label
+                  >
+                  <input type="text" name="firstName" id="name-tx" />
+                </div>
+                <div class="name-form">
+                  <label for="email-txt" class="input-title-email">email</label>
+                  <div class="mesg"></div>
+                  <input type="email" name="email" id="email-txt" />
+                </div>
+                <div class="name-form">
+                  <label for="order-leter-time" class="select-title"
+                    >antal måneder</label
+                  >
+                  <select name="order-leter-time" id="order-time-dropdown">
+                    <option value="month" selected disabled></option>
+                    <option value="month-1">1 måneder</option>
+                    <option value="month-2">2 måneder</option>
+                    <option value="month-3">3 måneder</option>
+                  </select>
+                </div>
+                <input type="submit" value="køb abonnement" id="form-submit" />
+              </form>
+
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="contact-container">
+          <h4 class="footer-title">kontakt os</h4>
+          <ul class="contact-list">
+            <li class="contact-item">
+              <h4 class="contact-title">telefon</h4>
+              <a href="tel:+4523547678" class="address">+45 23 54 76 78</a>
+            </li>
+            <li class="contact-item">
+              <h4 class="contact-title">email</h4>
+              <a href="mailto:info@info.dk" class="address">info@info.dk</a>
+            </li>
+          </ul>
+        </div>
+        <div class="icon-container">
+          <ul class="footer-icon-list">
+            <li class="logo-items">
+              <img
+                src="./logo/BoligBladetLogo-White.png"
+                alt="BoligBladetLogo-White"
+                class="footer-logo"
+              />
+            </li>
+            <li class="icon-items">
+              <a href="#" class="social-link">
+                <img
+                  src="./icons/icons8-facebook-24.svg"
+                  alt="facebook"
+                  class="icon-social"
+                />
+              </a>
+              <a href="#" class="social-link">
+                <img
+                  src="./icons/icons8-instagram-24.svg"
+                  alt="instagram"
+                  class="icon-social"
+                />
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-menu">
+          <h4 class="footer-title">infirmation</h4>
+          <ul class="footer-list">
+            <li class="footer-item">
+              <a href="#inspiration" class="footer-link">inspiration</a>
+            </li>
+            <li class="footer-item">
+              <a href="#artikler" class="footer-link">artikler</a>
+            </li>
+            <li class="footer-item">
+              <a href="#abonnement" class="footer-link">abonnement</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
