@@ -109,6 +109,43 @@
   /*! HERO-SECTION*/
   /**==============================*/
 
+  .hero-container {
+    position: absolute;
+    top: 35%;
+    right: 20%;
+
+    z-index: 2;
+  }
+
+  .hero-title {
+    font-size: 65px;
+    margin-bottom: 6px;
+  }
+
+  .hero-link-point {
+    width: 300px;
+  }
+
+  .image-in-slide {
+    width: 100%;
+    height: 722px;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .hero-context {
+    width: 300px;
+    margin-bottom: 51px;
+  }
+  .hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    min-width: 0;
+  }
+
   /**==============================*/
   /*! FEATURE-SECTION*/
   /**==============================*/
