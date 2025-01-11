@@ -6,16 +6,16 @@ document.querySelector("#order-data").addEventListener("submit", function (e) {
   const user = form.elements.firstName.value.trim();
   const email = form.elements.email.value.trim();
 
-  const selectMonths = document.querySelector("#order-time-dropdown");
   const label = document.querySelector(".input-title-email");
   const message = document.querySelector(".mesg");
   const heading = document.querySelector(".subscription-title");
 
   message.innerHTML = "";
+  message.style.visibility = "hidden";
   label.style.display = "block";
   //   message.style.display = "none";
 
-  if (user === "" || email === "" || selectMonths.value === "month") {
+  if (user === "" || email === "") {
     alert("All form fields must de filled in");
     return;
   }
@@ -25,20 +25,20 @@ document.querySelector("#order-data").addEventListener("submit", function (e) {
     label.style.display = "none";
     // console.log("not valid email");
     message.innerHTML = "not valid email";
-    message.style.color = "navy";
-    message.style.display = "block";
+    message.style.color = "yellow";
+    // message.style.display = "block";
+    message.style.visibility = "visible";
     return;
   }
 
   form.style.display = "none";
-  heading.innerHTML = "we will contact you";
+  heading.innerHTML = "We will contact you";
   heading.style.display = "block";
 
   // object
   const formData = {
     name: user,
     email: email,
-    selectMonths: selectMonths.value,
   };
 
   console.log(formData);

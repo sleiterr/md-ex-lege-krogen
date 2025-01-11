@@ -15,7 +15,6 @@
     <!--? JS -->
     <script src="./js/script.js" defer></script>
     <script src="./js/hero-slide.js" defer></script>
-    <script src="./js/gallery.js" defer></script>
     <script src="./js/subscription-form.js" defer></script>
     <title>Eksamen</title>
   </head>
@@ -229,47 +228,43 @@
       </section>
 
       <!-- FORM-SECTION -->
-      <section class="form-section" id="abonnement">
+      <section class="form-section" id="#">
         <div class="form-container container">
-          <div class="submit-content">
-            <div class="form-content">
-              <h2 class="form-title">Abonner på vores online magasin</h2>
-              <h4 class="form-subtitle">Og spar op til 379 kr</h4>
-              <p class="form-text">
-                Når du udfylder formularen, får du fakturaen tilsendt på mail.
-                Husk at tjekke dit spamfilter!
+          <div class="form-subscription">
+            <div class="form-context">
+              <p class="form-subtitle">
+                Kunne du også tænke dig at blive medlem af vores
               </p>
+              <h2 class="subscription-title">Kundeklub ?</h2>
             </div>
 
-            <div class="form-buy">
-              <h2 class="subscription-title"></h2>
-
-              <form action="#" method="POST" class="form-data" id="order-data">
-                <div class="name-form">
-                  <label for="name-tx" class="input-title-name"
-                    >fulde navn</label
-                  >
-                  <input type="text" name="firstName" id="name-tx" />
-                </div>
-                <div class="name-form">
-                  <label for="email-txt" class="input-title-email">email</label>
-                  <div class="mesg"></div>
-                  <input type="email" name="email" id="email-txt" />
-                </div>
-                <div class="name-form">
-                  <label for="order-leter-time" class="select-title"
-                    >antal måneder</label
-                  >
-                  <select name="order-leter-time" id="order-time-dropdown">
-                    <option value="month" selected disabled></option>
-                    <option value="month-1">1 måneder</option>
-                    <option value="month-2">2 måneder</option>
-                    <option value="month-3">3 måneder</option>
-                  </select>
-                </div>
-                <input type="submit" value="køb abonnement" id="form-submit" />
-              </form>
-            </div>
+            <form action="#" method="POST" class="form-data" id="order-data">
+              <div class="name-form">
+                <input
+                  type="text"
+                  name="firstName"
+                  id="name-tx"
+                  placeholder="Fulde navn"
+                />
+                <p class="input-title-email"></p>
+                <p class="mesg"></p>
+                <input
+                  type="email"
+                  name="email"
+                  id="email-txt"
+                  class=""
+                  placeholder="Email"
+                />
+              </div>
+              <textarea
+                name="message"
+                id="message"
+                cols="30"
+                rows="10"
+                placeholder="Hvem køber du legetøj til?"
+              ></textarea>
+              <input type="submit" value="BLIV MEDLEM NU!" id="form-submit" />
+            </form>
           </div>
         </div>
       </section>
