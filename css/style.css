@@ -67,6 +67,34 @@ button {
 /*******************************/
 /*! HEADER */
 /*******************************/
+/*?  */
+
+.info-discont {
+  background-color: rgba(215, 230, 236, 1);
+}
+
+.discount-items {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 8px;
+  padding: 10px 0;
+}
+
+.items-discount {
+  width: 10px;
+  height: 8px;
+}
+
+.discount-textt {
+  font-weight: 500;
+  font-size: 10px;
+  color: #355674;
+  
+  line-height: normal;
+  letter-spacing: 0.5px;
+}
 
 /*? NAV-LOGO */
 
