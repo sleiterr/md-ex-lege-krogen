@@ -8,7 +8,7 @@ document.querySelector("#order-data").addEventListener("submit", function (e) {
 
   const label = document.querySelector(".input-title-email");
   const message = document.querySelector(".mesg");
-  const heading = document.querySelector(".subscription-title");
+  // const heading = document.querySelector(".subscription-title");
 
   message.innerHTML = "";
   message.style.visibility = "hidden";
@@ -32,8 +32,8 @@ document.querySelector("#order-data").addEventListener("submit", function (e) {
   }
 
   form.style.display = "none";
-  heading.innerHTML = "We will contact you";
-  heading.style.display = "block";
+  label.innerHTML = "We will contact you";
+  label.style.display = "block";
 
   // object
   const formData = {

@@ -398,7 +398,7 @@ button {
 }
 
 /**==============================*/
-/*! GALLERY-SECTION*/
+/*! PRODUCT-SECTION*/
 /**==============================*/
 
 .product-section {
@@ -716,6 +716,20 @@ textarea:focus {
   text-align: center;
   line-height: normal;
   letter-spacing: 3.75px;
+}
+
+.input-title-email {
+  font-family: "Square Peg";
+  font-weight: 400;
+  font-size: 75px;
+
+  color: #fff;
+  text-align: center;
+  line-height: normal;
+  letter-spacing: 3.75px;
+
+  margin-top: 50px;
+  display: none;
 }
 
 .mesg {
