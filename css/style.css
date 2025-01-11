@@ -390,7 +390,7 @@ button {
 
 .feature-link:hover,
 .feature-link:active {
-  background-color: rgb(255, 255, 255, 0.20);
+  background-color: rgb(255, 255, 255, 0.2);
   transition: 250ms ease;
 }
 
@@ -405,7 +405,50 @@ button {
 .product-container {
 }
 
+.product-overview {
+}
 
+.product-context {
+}
+
+.product-title {
+}
+
+.product-subtitle {
+}
+
+.product-rating {
+}
+
+.product-img-overview {
+}
+
+.product-text {
+}
+
+.product-price {
+}
+
+.product-link {
+}
+
+.product-testimonial {
+}
+
+.testimonial-context {
+}
+
+.testimonials-list {
+}
+
+.testimonial-items {
+}
+
+.testimonial-title {
+}
+
+.testimonial-subtitle {
+}
 
 /**==============================*/
 /*! FORM-SECTION*/
