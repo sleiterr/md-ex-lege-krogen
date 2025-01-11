@@ -163,6 +163,62 @@ button {
 /* no margin-right for last-child "Contact-us" */
 
 /**==============================*/
+/*! LINK-POINT*/
+/**==============================*/
+
+.section-linkpoint {
+  background-color: #355674;
+}
+
+.container-linkpoint {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 90px 0;
+  width: 100vw;
+  height: 100vh;
+}
+
+.content-linkpoint {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.title-linkpoint {
+  font-family: "Square Peg";
+  font-weight: 400;
+  font-size: 75px;
+
+  color: #fff;
+  text-align: center;
+  line-height: normal;
+}
+
+.link-btn {
+  font-weight: 500;
+  font-size: 14px;
+
+  color: #fff;
+  text-align: center;
+  letter-spacing: 0.7px;
+  text-transform: uppercase;
+
+  background-color: rgb(148, 120, 167);
+  border-radius: 23px;
+  padding: 14px 0;
+  width: 400px;
+}
+
+.link-btn:hover,
+.link-btn:active {
+  background-color: rgb(175, 134, 202);
+  transition: 250ms ease;
+}
+
+/**==============================*/
 /*! HERO-SECTION*/
 /**==============================*/
 
@@ -312,13 +368,33 @@ button {
 }
 
 /*? FEATURE-ITEMS */
+
 .features-list {
   display: flex;
   align-items: center;
   justify-content: center;
 
   gap: 72px;
-  width: 100%;
+}
+
+.feature-discount {
+  position: relative;
+}
+
+.feature-discount::before {
+  content: "30%";
+  position: absolute;
+  top: 4%;
+  right: 5%;
+
+  font-family: "Square Peg";
+  font-weight: 400;
+  font-size: 45px;
+  color: #355674;
+
+  background-color: rgba(215, 230, 236, 1);
+  border-radius: 50%;
+  padding: 27px;
 }
 
 .feature-item {
@@ -326,7 +402,6 @@ button {
 }
 
 .features-item-block {
-  width: 100%;
   height: auto;
 }
 

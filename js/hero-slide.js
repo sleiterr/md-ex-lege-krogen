@@ -15,7 +15,7 @@ setInterval(function () {
   } else {
     currentImageIndex++;
   }
-  // heroActiveSlide();
+  heroActiveSlide();
 }, 4000);
 
 // function next() {
