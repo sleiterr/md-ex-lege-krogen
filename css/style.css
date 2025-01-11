@@ -152,7 +152,7 @@ button {
 }
 
 .nav-link:hover {
-  color: rgb(255, 255, 255, 0.80);
+  color: rgb(255, 255, 255, 0.8);
   transition: 0.3s ease;
 }
 
@@ -188,17 +188,9 @@ button {
 
 .hero-container {
   position: absolute;
+  top: 40%;
+  right: 35%;
 
-  /* display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-end; */
-  top: 60%;
-  right: 14%;
-
-  max-width: 560px;
-  /* width: 50%; */
-  height: auto;
   z-index: 2;
 }
 
@@ -212,46 +204,63 @@ button {
 }
 
 .hero-title {
-  font-family: "Square Peg", serif;
-  font-weight: 700;
-  font-size: 52px;
-  line-height: 1em;
-
-  text-align: right;
-  margin-bottom: 22px;
-
-  color: #fff;
-}
-
-/* .hero-text {
-  position: absolute;
+  font-family: "Square Peg";
   font-weight: 400;
-  font-size: 14px;
-  line-height: 1.4em;
+  font-size: 75px;
 
-  letter-spacing: 0.09em;
-  color: #000;
-
-  margin-bottom: 42px;
-} */
-
-.hero-btt {
-  font-weight: 600;
-  font-size: 18px;
   color: #fff;
-  letter-spacing: 0.09em;
+  text-align: center;
+  line-height: normal;
 
-  background-color: #e79899;
-  text-transform: uppercase;
-  padding: 12px 26px;
-  width: 560px;
+  margin-bottom: 6px;
 }
 
-.hero-btt:hover,
-.hero-btt:active {
-  background-color: rgb(238, 192, 193);
+.hero-context {
+  font-weight: 500;
+  font-size: 18px;
+
+  color: #fff;
+  text-align: center;
+  line-height: 22px;
+
+  margin-bottom: 121px;
+}
+
+.hero-link-point {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+
+  font-weight: 500;
+  font-size: 14px;
+
+  color: #fff;
+  letter-spacing: 0.7px;
+  text-transform: uppercase;
+
+  background-color: rgb(148, 120, 167);
+  border-radius: 23px;
+  text-transform: uppercase;
+  padding: 14px 0;
+  width: 600px;
+}
+
+.arrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  color: #fff;
+  font-size: 18px;
+}
+
+.hero-link-point:hover,
+.hero-link-point:active {
+  background-color: rgb(175, 134, 202);
   transition: 250ms ease;
 }
+
 
 /**==============================*/
 /*! GALLERY-SECTION*/

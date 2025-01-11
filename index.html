@@ -10,7 +10,7 @@
     <!-- STYLE-CSS -->
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/media-queries.css" />
-    <link rel="stylesheet" href="./icons/style.css" />
+    <link rel="stylesheet" href="./icons/icons.css" />
 
     <!--? JS -->
     <script src="./js/script.js" defer></script>
@@ -22,17 +22,22 @@
 
   <body>
     <header class="header">
-
       <div class="info-discont">
         <div class="discount-items">
-          <img src="./icons/truck-solid.svg" alt="truck" class="items-discount">
+          <a href="#">
+            <img
+              src="./icons/truck-solid.svg"
+              alt="truck"
+              class="items-discount"
+            />
+          </a>
           <p class="discount-textt">Fri fragt ved køb over 499,-</p>
         </div>
       </div>
 
       <nav class="nav-bar">
         <div class="logo-nav">
-          <a href="#" class="logo-link">
+          <a href="#home" class="logo-link">
             <img
               src="./logo/legekrogen_logo.png"
               alt="bolig-logo"
@@ -58,28 +63,34 @@
             <a href="#customerclub" class="nav-link">Kundeklub</a>
           </li>
         </ul>
-        
       </nav>
     </header>
 
     <main>
+      <!-- HERO-SECTION -->
       <section class="section-hero" id="home">
         <img class="image-in-slide" src="" alt="" />
 
         <div class="hero-container">
           <div class="hero-content">
-            <h1 class="hero-title">Dit foretrukne online boligmagasin</h1>
-            <button class="hero-btt">Show More</button>
+            <h1 class="hero-title">At lege er at leve</h1>
+            <p class="hero-context">
+              Her hos os har vi et stort udvalg af legetøj i høj kvalitet
+            </p>
+            <a href="./linkpoint.html" class="hero-link-point"> 
+              Læs mere 
+              <i class="icon-cheveron-right arrow"></i>
+            </a>
           </div>
         </div>
       </section>
 
-      <!-- GALLERY-SECTION -->
-      <section class="gallery-section" id="inspiration">
+      <!--  -->
+      <section class="gallery-section" id="#">
         <div class="gallery-container container">
           <div class="gall-content">
             <p class="gall-subtitle">Søge du</p>
-            <h2 class="gall-title">inspiration til boligindretning?</h2>
+            <h2 class="gall-title">At lege er at leve</h2>
           </div>
           <div class="gallery-img"></div>
           <div class="gall-btt">
@@ -105,7 +116,6 @@
             </div>
           </div>
         </div>
-        
       </section>
 
       <!-- ARTIKEL -->
@@ -144,12 +154,7 @@
             <div class="form-buy">
               <h2 class="subscription-title"></h2>
 
-              <form
-                action="#"
-                method="POST"
-                class="form-data"
-                id="order-data"
-              >
+              <form action="#" method="POST" class="form-data" id="order-data">
                 <div class="name-form">
                   <label for="name-tx" class="input-title-name"
                     >fulde navn</label
@@ -174,7 +179,6 @@
                 </div>
                 <input type="submit" value="køb abonnement" id="form-submit" />
               </form>
-
             </div>
           </div>
         </div>
