@@ -250,7 +250,7 @@ button {
   display: flex;
   align-items: center;
   justify-content: center;
-  
+
   color: #fff;
   font-size: 18px;
 }
@@ -261,254 +261,151 @@ button {
   transition: 250ms ease;
 }
 
-
 /**==============================*/
-/*! GALLERY-SECTION*/
-/**==============================*/
-
-.gallery-section {
-}
-
-.gallery-container {
-  padding: 90px 0;
-}
-
-.gall-content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-.gall-subtitle {
-  font-weight: 400;
-  font-size: 22px;
-  letter-spacing: 0.6px;
-
-  line-height: 50px;
-  color: #333;
-}
-
-.gall-title {
-  font-family: "Bodoni Moda", serif;
-  font-weight: 600;
-  font-size: 52px;
-  color: #333;
-  letter-spacing: 0.4px;
-
-  margin-bottom: 90px;
-}
-
-.gallery-img {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  grid-column-gap: 60px;
-  grid-row-gap: 60px;
-  /* width: 90%; */
-}
-
-.img {
-  object-fit: cover;
-  object-position: center;
-  cursor: pointer;
-}
-
-.img-caption {
-  font-weight: 600;
-  font-size: 18px;
-  color: #e79899;
-  text-transform: uppercase;
-
-  margin-top: 14px;
-}
-
-.gall-btt {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  margin-top: 90px;
-}
-
-.gall-link {
-  font-weight: 600;
-  font-size: 18px;
-  text-align: center;
-  text-transform: uppercase;
-  color: #fff;
-
-  padding: 12px 0;
-  background-color: rgb(222, 193, 97);
-  width: 40%;
-}
-
-.gall-link:hover,
-.gall-link:active {
-  background-color: rgb(235, 208, 119);
-  transition: 250ms ease;
-}
-
-/**==============================*/
-/*! GALLERY-SECTION*/
+/*! FEATURE-SECTION*/
 /**==============================*/
 
-.artikel-section {
-  background-image: linear-gradient(
-      90deg,
-      rgba(42, 42, 42, 0.4) 50%,
-      rgba(0, 0, 0, 0.4) 100%
-    ),
-    url("../img/article.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-
+.feature-section {
+  background-color: rgba(193, 173, 206, 1);
   width: 100vw;
-  height: 100vh;
 }
 
-.artikel-container {
-  display: flex;
-  align-items: flex-end;
-  justify-content: flex-start;
-  width: 100%;
-  height: 100%;
-
+.feaure-container {
   padding: 90px 0;
 }
 
-.articke-content {
+.feature-caption {
+  height: auto;
+  width: 100%;
+}
+
+.feature-title {
+  font-family: "Square Peg";
+  font-weight: 400;
+  font-size: 50px;
+
+  color: #fff;
+  text-align: center;
+  line-height: normal;
+  letter-spacing: 2.5px;
+}
+
+.feature-subtitle {
+  font-weight: 300;
+  font-size: 55px;
+
+  color: #fff;
+  text-align: center;
+  line-height: normal;
+  letter-spacing: 1.375px;
+  text-transform: uppercase;
+  margin-bottom: 92px;
+}
+
+.feature-box {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
+  align-items: center;
+  justify-content: center;
 
-  width: 50%;
+  gap: 144px;
+}
+
+/*? FEATURE-ITEMS */
+.features-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 72px;
+  width: 100%;
+}
+
+/* .feature-item {
+  width: calc((100% - 72px) / 4);
+  width: 100%;
+} */
+
+.features-item-block {
+  width: 100%;
   height: auto;
-  margin-left: 220px;
 }
 
-.artikel-subtitle {
-  font-weight: 700;
-  font-size: 18px;
-  letter-spacing: 0.06em;
-  color: #fff;
+.product-cart {
+  width: 325px;
+  height: 100%;
+  border-radius: 16px 16px 0px 0px;
+}
 
+.feature-content {
+  background-color: rgba(148, 120, 167, 1);
+  padding: 22px 16px;
+
+  border-radius: 0px 0px 16px 16px;
+}
+
+.feature-heading {
+  font-weight: 500;
+  font-size: 18px;
+
+  color: #fff;
+  line-height: 22px; /* 122.222% */
+}
+
+.feature-price {
+  font-weight: 400;
+  font-size: 26px;
+
+  color: #fff;
+  margin-top: 13px;
+}
+
+.feature-item-text {
+  font-weight: 300;
+  font-size: 18px;
+
+  color: #fff;
+  line-height: 22px; /* 122.222% */
+}
+
+.feature-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+
+  font-weight: 500;
+  font-size: 14px;
+
+  color: #fff;
+  text-align: center;
+  letter-spacing: 0.7px;
   text-transform: uppercase;
-  margin-bottom: 32px;
+
+  border: 1px solid #fff;
+  border-radius: 23px;
+  padding: 13.5px 0;
+  width: 400px;
 }
 
-.article-header {
-  position: relative;
-  bottom: 0;
-  left: 0;
-}
-
-.article-header i {
-  color: #fff;
-}
-
-.artikel-title {
-  /* position: relative; */
-  text-indent: 30px;
-  font-family: "Bodoni Moda", serif;
-  font-weight: 700;
-  font-size: 42px;
-  letter-spacing: 0.04em;
-  line-height: 0.9em;
-  color: #fff;
-  margin-bottom: 32px;
-}
-
-.left {
-  position: absolute;
-  font-size: 18px;
-}
-
-.right {
-  position: absolute;
-  display: inline-block;
-  font-size: 18px;
-  transform: rotate(180deg);
-  bottom: 45px;
-  left: 350px;
-}
-
-.mobile-btn {
-  display: none;
-}
-
-.artikle-btt {
-  font-weight: 600;
-  font-size: 18px;
-  color: #000;
-  letter-spacing: 0.09em;
-
-  background-color: #e79899;
-  text-transform: uppercase;
-  color: #fff;
-  padding: 12px 26px;
-  width: 560px;
-}
-
-.artikle-btt:hover,
-.artikle-btt:active {
-  background-color: rgb(238, 192, 193);
+.feature-link:hover,
+.feature-link:active {
+  background-color: rgb(255, 255, 255, 0.20);
   transition: 250ms ease;
 }
 
-/*? MODAL-IMAGES */
-
-.modal {
-  display: none;
-  position: fixed;
-  z-index: 999;
-  padding-top: 5%;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0, 0, 0);
-  background-color: rgba(0, 0, 0, 0.4);
-}
-
-.modal.show {
-  display: block;
-}
-
-.modal-content {
-  position: relative;
-
-  margin: 0 auto;
-  width: fit-content;
-  z-index: 1000;
-}
-
-.close {
-  position: absolute;
-  top: -10px;
-  right: 0;
-  cursor: pointer;
-  color: #fff;
-  /* float: right; */
-  font-size: 52px;
-}
-
-.img-modal-wrapper {
-  display: flex;
-  justify-content: center;
-}
-
-.arrow-slider i {
-  font-size: 90px;
+.arrow-feature {
   color: #fff;
 }
 
-#modal-img {
-  max-height: 80vh;
+/**==============================*/
+/*! GALLERY-SECTION*/
+/**==============================*/
+
+.product-container {
 }
+
+
 
 /**==============================*/
 /*! FORM-SECTION*/
