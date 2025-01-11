@@ -590,6 +590,7 @@ button {
 }
 
 /*? PRODUCT-TESTIMONIALS */
+
 .product-testimonial {
   background-color: rgba(243, 248, 249, 1);
   padding: 90px 0;
@@ -613,6 +614,7 @@ button {
 }
 
 .testimonial-items {
+  width: 100%;
 }
 
 .testimonial-title {
@@ -623,6 +625,7 @@ button {
   text-align: center;
 
   width: 528px;
+  margin-bottom: 26px;
 }
 
 .testimonial-subtitle {
@@ -677,29 +680,31 @@ button {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-
+  
   gap: 27px;
+  height: auto;
+  width: 100%;
 }
 
 #name-tx,
 #email-txt {
   display: block;
   outline: none;
-
+  
   font-family: "Quicksand", serif;
   font-weight: 400;
   font-size: 14px;
   color: #fff;
   letter-spacing: 0.7px;
-
+  
   padding-left: 29px;
-
+  
   border-radius: 28px;
   border: 1px solid rgba(255, 255, 255, 1);
   background-color: transparent;
-
-  height: 45px;
+  
   width: 600px;
+  height: 45px;
 }
 
 #name-tx:focus,
